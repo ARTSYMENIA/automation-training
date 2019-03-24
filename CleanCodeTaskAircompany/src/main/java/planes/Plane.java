@@ -1,4 +1,4 @@
-package Planes;
+package planes;
 
 import java.util.Objects;
 
@@ -24,7 +24,7 @@ abstract public class Plane {
     }
 
     public int getMaxLoadCapacity() {
-        return this.maxLoadCapacity;
+        return maxLoadCapacity;
     }
 
     @Override
