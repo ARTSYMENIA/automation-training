@@ -1,4 +1,4 @@
-package hertmeplenty;
+package hurtmeplenty;
 
 import icanwin.AbstractPage;
 import org.openqa.selenium.By;
