@@ -32,18 +32,55 @@ public class AirportTest {
 
     private static PassengerPlane planeWithMaxPassengerCapacity = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242);
 
-    @Test
-    public void testGetTransportMilitaryPlanes() {
-        Airport airport = new Airport(planes);
-        List<MilitaryPlane> transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
+    private boolean compareEachPairOfAdjacentPlanesByCapacity(List<? extends Plane> sortedPlanes) {
+        boolean planesSorted = true;
+        for (int i = 0; i < sortedPlanes.size() - 1; i++) {
+            Plane currentPlane = sortedPlanes.get(i);
+            Plane nextPlane = sortedPlanes.get(i + 1);
+            if (currentPlane.getMaxLoadCapacity() > nextPlane.getMaxLoadCapacity()) {
+                planesSorted = false;
+                break;
+            }
+        }
+        return planesSorted;
+    }
+    private boolean searchForTransportMilitaryPlane(List<MilitaryPlane> militaryPlanes) {
         boolean transportMilitaryPlaneGot = false;
-        for (MilitaryPlane militaryPlane : transportMilitaryPlanes) {
+        for (MilitaryPlane militaryPlane : militaryPlanes) {
             if ((militaryPlane.getType() == MilitaryTypes.TRANSPORT)) {
                 transportMilitaryPlaneGot = true;
                 break;
             }
         }
-        Assert.assertTrue(transportMilitaryPlaneGot);
+        return transportMilitaryPlaneGot;
+    }
+
+    private boolean searchForBomberMilitaryPlane(List<MilitaryPlane> militaryPlanes) {
+        boolean hasBomberInMilitaryPlanes = false;
+        for (MilitaryPlane militaryPlane : militaryPlanes) {
+            if ((militaryPlane.getType() == MilitaryTypes.BOMBER)) {
+                hasBomberInMilitaryPlanes = true;
+                break;
+            }
+        }
+        return hasBomberInMilitaryPlanes;
+    }
+
+    private boolean searchForUnclassifiedExperimentalPlane(List<ExperimentalPlane> experimentalPlanes) {
+        boolean hasUnclassifiedPlanes = false;
+        for(ExperimentalPlane experimentalPlane : experimentalPlanes){
+            if(experimentalPlane.getClassificationLevel() == ClassificationLevel.UNCLASSIFIED){
+                hasUnclassifiedPlanes = true;
+                break;
+            }
+        }
+        return hasUnclassifiedPlanes;
+    }
+    @Test
+    public void testAirportHasAtLeastOneTransportMilitaryPlane() {
+        Airport airport = new Airport(planes);
+        List<MilitaryPlane> transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
+        Assert.assertTrue(searchForTransportMilitaryPlane(transportMilitaryPlanes));
     }
 
     @Test
@@ -58,43 +95,21 @@ public class AirportTest {
         Airport airport = new Airport(planes);
         airport.sortByMaxLoadCapacity();
         List<? extends Plane> planesSortedByMaxLoadCapacity = airport.getPlanes();
-        boolean planesSorted = true;
-        for (int i = 0; i < planesSortedByMaxLoadCapacity.size() - 1; i++) {
-            Plane currentPlane = planesSortedByMaxLoadCapacity.get(i);
-            Plane nextPlane = planesSortedByMaxLoadCapacity.get(i + 1);
-            if (currentPlane.getMaxLoadCapacity() > nextPlane.getMaxLoadCapacity()) {
-                planesSorted = false;
-                break;
-            }
-        }
-        Assert.assertTrue(planesSorted);
+        Assert.assertTrue(compareEachPairOfAdjacentPlanesByCapacity(planesSortedByMaxLoadCapacity));
     }
 
+
     @Test
-    public void testHasAtLeastOneBomberInMilitaryPlanes() {
+    public void testAirportHasAtLeastOneBomberInMilitaryPlane() {
         Airport airport = new Airport(planes);
         List<MilitaryPlane> bomberMilitaryPlanes = airport.getBomberMilitaryPlanes();
-        boolean hasBomberInMilitaryPlanes = false;
-        for (MilitaryPlane militaryPlane : bomberMilitaryPlanes) {
-            if ((militaryPlane.getType() == MilitaryTypes.BOMBER)) {
-                hasBomberInMilitaryPlanes = true;
-                break;
-            }
-        }
-        Assert.assertTrue(hasBomberInMilitaryPlanes);
+        Assert.assertTrue(searchForBomberMilitaryPlane(bomberMilitaryPlanes));
     }
 
     @Test
-    public void testExperimentalPlanesHasUnclassifiedPlanes(){
+    public void testExperimentalPlanesHaveUnclassifiedPlanes(){
         Airport airport = new Airport(planes);
         List<ExperimentalPlane> experimentalPlanes = airport.getExperimentalPlanes();
-        boolean hasUnclassifiedPlanes = false;
-        for(ExperimentalPlane experimentalPlane : experimentalPlanes){
-            if(experimentalPlane.getClassificationLevel() == ClassificationLevel.UNCLASSIFIED){
-                hasUnclassifiedPlanes = true;
-                break;
-            }
-        }
-        Assert.assertTrue(hasUnclassifiedPlanes);
+        Assert.assertTrue(searchForUnclassifiedExperimentalPlane(experimentalPlanes));
     }
 }
