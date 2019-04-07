@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d6962ba-8e7b-43c8-8d68-dffd9b68fa62" name="Default Changelist" comment="" />
+    <list default="true" id="8d6962ba-8e7b-43c8-8d68-dffd9b68fa62" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskA/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/a/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskA/CarArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/a/CarArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskA/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/a/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskB/BodyTypes/Minivan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/b/bodytypes/Minivan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskB/BodyTypes/Sedan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/b/bodytypes/Sedan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskB/BodyTypes/Wagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/b/bodytypes/Wagon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskB/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/b/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskB/ComfortLevels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/b/ComfortLevels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskB/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/b/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Classes/TaskB/TaxiPark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/task/b/TaxiPark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ErrorAndExceptions/Task/ErrorAndExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exeptions/task/ErrorAndExceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ErrorAndExceptions/Task/ErrorsAndExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exeptions/task/ErrorsAndExceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ErrorAndExceptions/Task/carInfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exeptions/task/carInfo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Fundamentals/Task/ArraysTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/ArraysTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Fundamentals/Task/DataTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/DataTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Fundamentals/Task/KeywordsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/KeywordsTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Fundamentals/Task/Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/Operators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Fundamentals/Task/OperatorsSecondTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/OperatorsSecondTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Threads/Task4/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/threads/task4/Parking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Threads/Task4/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/threads/task4/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskA/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskA/CarArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskA/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskB/BodyTypes/Minivan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskB/BodyTypes/Sedan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskB/BodyTypes/Wagon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskB/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskB/ComfortLevels.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskB/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Classes/TaskB/TaxiPark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ErrorAndExceptions/Task/ErrorAndExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ErrorAndExceptions/Task/ErrorsAndExceptions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Fundamentals/Task/ArraysTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Fundamentals/Task/DataTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Fundamentals/Task/KeywordsTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Fundamentals/Task/Operators.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Fundamentals/Task/OperatorsSecondTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Fundamentals/Task/StringLengthSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/JavaTask.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Threads/Task4/Parking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Threads/Task4/Parking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Threads/Task4/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Threads/Task4/Vehicle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebDriverTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebDriverTask/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Threads/Task4/Parking.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/collections/task1/CircleOfPeople.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="510">
+              <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Threads/Task4/Vehicle.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/collections/task1/practic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="134">
+              <caret line="9" selection-start-line="9" selection-end-line="54" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +93,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -93,6 +139,13 @@
         <option value="$PROJECT_DIR$/src/main/java/Threads/Parking.java" />
         <option value="$PROJECT_DIR$/src/main/java/Threads/Task4/Parking.java" />
         <option value="$PROJECT_DIR$/src/main/java/Threads/Task4/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Threads/task4/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hreads/task4/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/threads/task4/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/collections/task1/People.java" />
+        <option value="$PROJECT_DIR$/src/main/java/collections/task1/Task12.java" />
+        <option value="$PROJECT_DIR$/src/main/java/collections/task1/practic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/collections/task1/CircleOfPeople.java" />
       </list>
     </option>
   </component>
@@ -102,10 +155,14 @@
         <option name="mavenHome" value="C:/apache-maven-3.6.0" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="764" />
+    <option name="width" value="750" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -114,7 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,22 +203,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Task4" type="462c0819:PsiDirectoryNode" />
+              <item name="task1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551391370845" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../serverName" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554644799398" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -181,10 +238,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Parking">
-    <configuration name="CountryRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountryRunner" />
-      <module name="JavaTask" />
+  <component name="RunManager" selected="Application.CircleOfPeople">
+    <configuration name="CircleOfPeople" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.task1.CircleOfPeople" />
+      <module name="epamTraining" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collections.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,12 +291,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java.Classes.TaskB.Runner" />
-      <module name="JavaTask" />
+    <configuration name="practic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.task1.practic" />
+      <module name="epamTraining" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java.Classes.TaskB.*" />
+          <option name="PATTERN" value="collections.task1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,19 +305,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CountryRunner" />
       <item itemvalue="Application.ErrorAndExceptions" />
       <item itemvalue="Application.ErrorsAndExceptions" />
       <item itemvalue="Application.Parking" />
-      <item itemvalue="Application.Runner (2)" />
+      <item itemvalue="Application.CircleOfPeople" />
+      <item itemvalue="Application.practic" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CircleOfPeople" />
+        <item itemvalue="Application.practic" />
         <item itemvalue="Application.Parking" />
         <item itemvalue="Application.ErrorAndExceptions" />
         <item itemvalue="Application.ErrorsAndExceptions" />
-        <item itemvalue="Application.CountryRunner" />
-        <item itemvalue="Application.Runner (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +338,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -285,13 +348,13 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22422259" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47954175" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33060557" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -303,6 +366,35 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27760968" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.400982" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33060557" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -325,14 +417,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Fundamentals/Task/OperatorsSecondTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fundamentals/OperatorsSecondTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Fundamentals/Task/Operators.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fundamentals/Operators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="41" selection-start-line="8" selection-start-column="8" selection-end-line="10" selection-end-column="41" />
@@ -342,7 +434,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Fundamentals/Task/DataTypes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fundamentals/DataTypes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="58" />
@@ -352,7 +444,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Fundamentals/Task/KeywordsTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fundamentals/KeywordsTask.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ForTests.java" />
@@ -364,21 +456,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskB/BodyTypes/Wagon.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/b/bodytypes/Wagon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskB/BodyTypes/Minivan.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/b/bodytypes/Minivan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskB/ComfortLevels.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/b/ComfortLevels.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
@@ -387,14 +479,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Country.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/CountryRunner.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskB/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/b/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskB/TaxiPark.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/b/TaxiPark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
@@ -406,7 +498,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskB/Runner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/b/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
@@ -416,7 +508,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskB/BodyTypes/Sedan.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/b/bodytypes/Sedan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
@@ -427,14 +519,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Java/ErrorAndExeptions/ErrorsAndExceptions.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskA/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/a/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskA/CarArray.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/a/CarArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
@@ -444,7 +536,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Classes/TaskA/Runner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/classes/task/a/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="16" selection-start-line="16" selection-end-line="20" selection-end-column="26" />
@@ -454,7 +546,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Fundamentals/Task/ArraysTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fundamentals/ArraysTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="31" column="27" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="27" />
@@ -464,7 +556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ErrorAndExceptions/Task/ErrorsAndExceptions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exeptions/task/ErrorsAndExceptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
@@ -474,14 +566,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ErrorAndExceptions/Task/ErrorAndExceptions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exeptions/task/ErrorAndExceptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Threads/Task4/Parking.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/threads/task4/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threads/task4/Parking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
@@ -491,10 +590,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Threads/Task4/Vehicle.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="527">
+          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="858" selection-start-line="858" selection-end-line="866" selection-end-column="48" />
+          <folding>
+            <element signature="e#30670#30671#0" expanded="true" />
+            <element signature="e#30707#30708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/collections/task1/Task12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/collections/task1/People.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/collections/task1/practic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="9" selection-start-line="9" selection-end-line="54" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/collections/task1/CircleOfPeople.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
