@@ -38,7 +38,7 @@ public class CircleOfPeople {
     }
 
     private static void excludeEverySecondInCircle(List list) {
-        int count = 0;
+        int count = 0;  //счётчик для каждого второго элемента
         Iterator iterator = list.iterator();
         while (list.size() > 1) {
             if (iterator.hasNext()) {
@@ -49,7 +49,7 @@ public class CircleOfPeople {
                     count = 0;
                 }
             } else {
-                iterator = list.iterator();
+                iterator = list.iterator(); //получаем итератор для следующего круга
                 System.out.println(list);
             }
         }
