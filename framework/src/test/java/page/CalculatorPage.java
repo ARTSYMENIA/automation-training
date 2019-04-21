@@ -1,6 +1,8 @@
 package page;
 
 import model.ComputeEngine;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CalculatorPage extends AbstractPage {
     private final String PAGE_URL = "https://cloud.google.com/products/calculator/";
+    private final Logger logger = LogManager.getRootLogger();
 
     @FindBy(xpath = "//md-tab-item/*[@title='Compute Engine']")
     private WebElement tabItemComputeEngine;
@@ -68,6 +71,9 @@ public class CalculatorPage extends AbstractPage {
 
     public void selectFromDropdownList(WebElement dropdownList, String option) {
         dropdownList.click();
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions
+                        .attributeToBe(dropdownList, "aria-expanded", "true"));
         int size = driver.findElements(By.xpath(buildLocator(option))).size();
         driver.findElements(By.xpath(buildLocator(option))).get(size-1).click();
     }
@@ -88,12 +94,15 @@ public class CalculatorPage extends AbstractPage {
         selectFromDropdownList(dropdownLocalSSD, computeEngine.getLocalSSD());
         selectFromDropdownList(dropdownDatacenterLocation, computeEngine.getDatacenterLocation());
         selectFromDropdownList(dropdownCommitedUsage, computeEngine.getCommittedUsage());
+        logger.info("Form filled with the following data\n"+computeEngine.toString());
         return this;
     }
 
     public EmailYourEstimateForm invokeEmailForm() {
         buttonAddToEstimate.click();
         buttonEmailEstimate.click();
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions.presenceOfElementLocated(By.name("emailForm")));
         return new EmailYourEstimateForm(driver);
     }
 

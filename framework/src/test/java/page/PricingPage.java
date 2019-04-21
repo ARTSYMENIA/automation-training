@@ -23,6 +23,7 @@ public class PricingPage extends AbstractPage {
         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.presenceOfElementLocated(calculators))
                 .click();
+        logger.info("Calculator page opened");
         return new CalculatorPage(driver);
     }
 

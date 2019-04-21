@@ -2,7 +2,6 @@ package util;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-
 import java.util.ArrayList;
 
 public class Tabs {

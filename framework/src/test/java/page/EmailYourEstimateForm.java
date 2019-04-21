@@ -28,9 +28,12 @@ public class EmailYourEstimateForm extends AbstractPage {
     }
 
     public EmailYourEstimateForm fillAndSendEmailFrom(String emailAddress) {
-        new WebDriverWait(driver, 10).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameWithForm));
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameWithForm));
+        inputEmail.click();
         inputEmail.sendKeys(emailAddress);
         buttonSendEmailWithEstimateForm.click();
+        logger.info("Email with estimated cost sent to "+emailAddress);
         return this;
     }
 

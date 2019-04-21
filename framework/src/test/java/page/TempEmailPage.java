@@ -7,10 +7,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class TempEmailPage extends AbstractPage{
 
     private final String PAGE_URL = "https://lroid.com/ru/";
+    private final Logger logger = LogManager.getRootLogger();
 
     @FindBy(id = "eposta_adres")
     private WebElement mailAddress;
@@ -32,7 +35,9 @@ public class TempEmailPage extends AbstractPage{
     public String getEmailAddress() {
         WebElement emailAddress = new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.visibilityOf(mailAddress));
-        return emailAddress.getAttribute("value");
+        String tempEmail = emailAddress.getAttribute("value");
+        logger.info("Temp email is got - "+tempEmail);
+        return tempEmail;
     }
 
     public TempEmailPage openNewMessage() {
@@ -45,7 +50,9 @@ public class TempEmailPage extends AbstractPage{
     public String getTotalPriceFromEmail() {
         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.id("iframe")));
-        return totalPrice.getText();
+        String totalPriceFromEmail = totalPrice.getText();
+        logger.info("Total estimated price from email - "+totalPriceFromEmail);
+        return totalPriceFromEmail;
     }
 
     @Override

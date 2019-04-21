@@ -21,6 +21,7 @@ public class GoogleCloudMainPage extends AbstractPage {
 
     public ProductsPage goToProductsPage() {
         buttonSeeProducts.click();
+        logger.info("Products page opened");
         return new ProductsPage(driver);
     }
 

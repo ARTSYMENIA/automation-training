@@ -142,4 +142,21 @@ public class ComputeEngine {
         return Objects.hash(numberOfInstances, instancesFor, operatingSystem, VMClass, instanceType, AddGPUs,
                 numberOfGPUs, GPUType, LocalSSD, DatacenterLocation, CommittedUsage);
     }
+
+    @Override
+    public String toString() {
+        return "\n{" +
+                "numberOfInstances='" + numberOfInstances + '\'' +
+                ", instancesFor='" + instancesFor + '\'' +
+                ", operatingSystem='" + operatingSystem + '\'' +
+                ", VMClass='" + VMClass + '\'' +
+                ", instanceType='" + instanceType + '\'' +
+                ", AddGPUs='" + AddGPUs + '\'' +
+                ", numberOfGPUs='" + numberOfGPUs + '\'' +
+                ", GPUType='" + GPUType + '\'' +
+                ", LocalSSD='" + LocalSSD + '\'' +
+                ", DatacenterLocation='" + DatacenterLocation + '\'' +
+                ", CommittedUsage='" + CommittedUsage + '\'' +
+                '}';
+    }
 }
