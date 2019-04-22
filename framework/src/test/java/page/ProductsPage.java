@@ -12,7 +12,6 @@ public class ProductsPage extends AbstractPage{
     private final String PAGE_URL = "https://cloud.google.com/products/";
     private final Logger logger = LogManager.getRootLogger();
 
-
     private final By buttonSeePricing = By.xpath("//*[@track-name='seePricing']");
     public ProductsPage(WebDriver driver) {
         super(driver);

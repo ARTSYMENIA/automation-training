@@ -2,7 +2,6 @@ package test;
 
 import model.ComputeEngine;
 import org.testng.annotations.Test;
-import page.CalculatorPage;
 import page.EmailYourEstimateForm;
 import page.GoogleCloudMainPage;
 import page.TempEmailPage;
@@ -27,10 +26,6 @@ public class CostFromMessageTest extends CommonConditions {
                 .goToCalculatorPage()
                 .fillPricingCalculatorForm(testComputeEngine)
                 .invokeEmailForm();
-//        EmailYourEstimateForm formToSend = new CalculatorPage(driver)
-//                .openPage()
-//                .fillPricingCalculatorForm(testComputeEngine)
-//                .invokeEmailForm();
 
         ArrayList<String> tabs = new Tabs(driver)
                 .openNewTab(new TempEmailPage(driver).getPAGE_URL());       //open https://lroid.com/ru/ in a new tab
