@@ -6,29 +6,29 @@ public class ComputeEngine {
     private String numberOfInstances;
     private String instancesFor;
     private String operatingSystem;
-    private String VMClass;
+    private String vmClass;
     private String instanceType;
-    private String AddGPUs;
+    private String addGPUs;
     private String numberOfGPUs;
-    private String GPUType;
-    private String LocalSSD;
-    private String DatacenterLocation;
-    private String CommittedUsage;
+    private String gpuType;
+    private String localSSD;
+    private String datacenterLocation;
+    private String committedUsage;
 
-    public ComputeEngine(String numberOfInstances, String instancesFor, String operatingSystem, String VMClass,
-                         String instanceType, String addGPUs, String numberOfGPUs, String GPUType, String localSSD,
+    public ComputeEngine(String numberOfInstances, String instancesFor, String operatingSystem, String vmClass,
+                         String instanceType, String addGPUs, String numberOfGPUs, String gpuType, String localSSD,
                          String datacenterLocation, String committedUsage) {
         this.numberOfInstances = numberOfInstances;
         this.instancesFor = instancesFor;
         this.operatingSystem = operatingSystem;
-        this.VMClass = VMClass;
+        this.vmClass = vmClass;
         this.instanceType = instanceType;
-        this.AddGPUs = addGPUs;
+        this.addGPUs = addGPUs;
         this.numberOfGPUs = numberOfGPUs;
-        this.GPUType = GPUType;
-        LocalSSD = localSSD;
-        DatacenterLocation = datacenterLocation;
-        CommittedUsage = committedUsage;
+        this.gpuType = gpuType;
+        this.localSSD = localSSD;
+        this.datacenterLocation = datacenterLocation;
+        this.committedUsage = committedUsage;
     }
 
     public String getNumberOfInstances() {
@@ -55,12 +55,12 @@ public class ComputeEngine {
         this.operatingSystem = operatingSystem;
     }
 
-    public String getVMClass() {
-        return VMClass;
+    public String getVmClass() {
+        return vmClass;
     }
 
-    public void setVMClass(String VMClass) {
-        this.VMClass = VMClass;
+    public void setVmClass(String vmClass) {
+        this.vmClass = vmClass;
     }
 
     public String getInstanceType() {
@@ -72,11 +72,11 @@ public class ComputeEngine {
     }
 
     public String getAddGPUs() {
-        return AddGPUs;
+        return addGPUs;
     }
 
     public void setAddGPUs(String addGPUs) {
-        this.AddGPUs = addGPUs;
+        this.addGPUs = addGPUs;
     }
 
     public String getNumberOfGPUs() {
@@ -87,36 +87,36 @@ public class ComputeEngine {
         this.numberOfGPUs = numberOfGPUs;
     }
 
-    public String getGPUType() {
-        return GPUType;
+    public String getGpuType() {
+        return gpuType;
     }
 
-    public void setGPUType(String GPUType) {
-        this.GPUType = GPUType;
+    public void setGpuType(String gpuType) {
+        this.gpuType = gpuType;
     }
 
     public String getLocalSSD() {
-        return LocalSSD;
+        return localSSD;
     }
 
     public void setLocalSSD(String localSSD) {
-        LocalSSD = localSSD;
+        this.localSSD = localSSD;
     }
 
     public String getDatacenterLocation() {
-        return DatacenterLocation;
+        return datacenterLocation;
     }
 
     public void setDatacenterLocation(String datacenterLocation) {
-        DatacenterLocation = datacenterLocation;
+        this.datacenterLocation = datacenterLocation;
     }
 
     public String getCommittedUsage() {
-        return CommittedUsage;
+        return committedUsage;
     }
 
     public void setCommittedUsage(String committedUsage) {
-        CommittedUsage = committedUsage;
+        this.committedUsage = committedUsage;
     }
 
     @Override
@@ -124,23 +124,23 @@ public class ComputeEngine {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ComputeEngine that = (ComputeEngine) o;
-        return AddGPUs == that.AddGPUs &&
-                numberOfInstances.equals(that.numberOfInstances) &&
+        return numberOfInstances.equals(that.numberOfInstances) &&
                 Objects.equals(instancesFor, that.instancesFor) &&
                 operatingSystem.equals(that.operatingSystem) &&
-                VMClass.equals(that.VMClass) &&
+                vmClass.equals(that.vmClass) &&
                 instanceType.equals(that.instanceType) &&
+                Objects.equals(addGPUs, that.addGPUs) &&
                 numberOfGPUs.equals(that.numberOfGPUs) &&
-                GPUType.equals(that.GPUType) &&
-                LocalSSD.equals(that.LocalSSD) &&
-                DatacenterLocation.equals(that.DatacenterLocation) &&
-                CommittedUsage.equals(that.CommittedUsage);
+                gpuType.equals(that.gpuType) &&
+                localSSD.equals(that.localSSD) &&
+                datacenterLocation.equals(that.datacenterLocation) &&
+                committedUsage.equals(that.committedUsage);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(numberOfInstances, instancesFor, operatingSystem, VMClass, instanceType, AddGPUs,
-                numberOfGPUs, GPUType, LocalSSD, DatacenterLocation, CommittedUsage);
+        return Objects.hash(numberOfInstances, instancesFor, operatingSystem, vmClass, instanceType, addGPUs,
+                numberOfGPUs, gpuType, localSSD, datacenterLocation, committedUsage);
     }
 
     @Override
@@ -149,14 +149,14 @@ public class ComputeEngine {
                 "numberOfInstances='" + numberOfInstances + '\'' +
                 ", instancesFor='" + instancesFor + '\'' +
                 ", operatingSystem='" + operatingSystem + '\'' +
-                ", VMClass='" + VMClass + '\'' +
+                ", vmClass='" + vmClass + '\'' +
                 ", instanceType='" + instanceType + '\'' +
-                ", AddGPUs='" + AddGPUs + '\'' +
+                ", addGPUs='" + addGPUs + '\'' +
                 ", numberOfGPUs='" + numberOfGPUs + '\'' +
-                ", GPUType='" + GPUType + '\'' +
-                ", LocalSSD='" + LocalSSD + '\'' +
-                ", DatacenterLocation='" + DatacenterLocation + '\'' +
-                ", CommittedUsage='" + CommittedUsage + '\'' +
+                ", gpuType='" + gpuType + '\'' +
+                ", localSSD='" + localSSD + '\'' +
+                ", datacenterLocation='" + datacenterLocation + '\'' +
+                ", committedUsage='" + committedUsage + '\'' +
                 '}';
     }
 }

@@ -84,12 +84,12 @@ public class CalculatorPage extends AbstractPage {
         inputNumberOfInstances.sendKeys(computeEngine.getNumberOfInstances());
         inputInstancesFor.sendKeys(computeEngine.getInstancesFor());
         selectFromDropdownList(dropdownOperatingSystem, computeEngine.getOperatingSystem());
-        selectFromDropdownList(dropdownVMClass, computeEngine.getVMClass());
+        selectFromDropdownList(dropdownVMClass, computeEngine.getVmClass());
         selectFromDropdownList(dropdownInstanceType, computeEngine.getInstanceType());
         if (computeEngine.getAddGPUs().equals("true")) {
             checkboxAddGPUs.click();
             selectFromDropdownList(dropdownNumberOfGPUs, computeEngine.getNumberOfGPUs());
-            selectFromDropdownList(dropdownGPUsType, computeEngine.getGPUType());
+            selectFromDropdownList(dropdownGPUsType, computeEngine.getGpuType());
         }
         selectFromDropdownList(dropdownLocalSSD, computeEngine.getLocalSSD());
         selectFromDropdownList(dropdownDatacenterLocation, computeEngine.getDatacenterLocation());
