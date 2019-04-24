@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import service.ComputeEngineCreator;
 
 public class CalculatorPage extends AbstractPage {
     private final String PAGE_URL = "https://cloud.google.com/products/calculator/";
@@ -86,7 +87,7 @@ public class CalculatorPage extends AbstractPage {
         selectFromDropdownList(dropdownOperatingSystem, computeEngine.getOperatingSystem());
         selectFromDropdownList(dropdownVMClass, computeEngine.getVmClass());
         selectFromDropdownList(dropdownInstanceType, computeEngine.getInstanceType());
-        if (computeEngine.getAddGPUs().equals("true")) {
+        if (computeEngine.addGPUs()) {
             checkboxAddGPUs.click();
             selectFromDropdownList(dropdownNumberOfGPUs, computeEngine.getNumberOfGPUs());
             selectFromDropdownList(dropdownGPUsType, computeEngine.getGpuType());

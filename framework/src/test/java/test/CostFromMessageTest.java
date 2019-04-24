@@ -6,6 +6,7 @@ import page.EmailYourEstimateForm;
 import page.GoogleCloudMainPage;
 import page.TempEmailPage;
 import service.ComputeEngineCreator;
+import service.TestDataReader;
 import util.StringUtils;
 import util.Tabs;
 import java.util.ArrayList;
@@ -17,7 +18,8 @@ public class CostFromMessageTest extends CommonConditions {
 
     @Test
     public void testIfTotalPriceFromEmailEqualsToCalculated() {
-        double expectedPrice = 1187.77;
+        double expectedPrice = Double.parseDouble(TestDataReader.getTestData("testdata.engine.expected.price"));
+//        double expectedPrice = 1187.77;
         ComputeEngine testComputeEngine = ComputeEngineCreator.computeEngineForEstimating();
         EmailYourEstimateForm formToSend = new GoogleCloudMainPage(driver)
                 .openPage()
@@ -28,7 +30,7 @@ public class CostFromMessageTest extends CommonConditions {
                 .invokeEmailForm();
 
         ArrayList<String> tabs = new Tabs(driver)
-                .openNewTab(new TempEmailPage(driver).getPAGE_URL());       //open https://lroid.com/ru/ in a new tab
+                .openNewTab(new TempEmailPage(driver).getPageURL());       //open https://lroid.com/ru/ in a new tab
 
         String emailAddress = new TempEmailPage(driver).getEmailAddress();
 

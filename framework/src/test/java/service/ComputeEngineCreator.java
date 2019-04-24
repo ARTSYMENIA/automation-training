@@ -16,13 +16,13 @@ public class ComputeEngineCreator {
     private static final String TESTDATA_ENGINE_COMMITTED_USAGE = "testdata.engine.usage";
 
     public static ComputeEngine computeEngineForEstimating() {
-        return new ComputeEngine(TestDataReader.getTestData(TESTDATA_ENGINE_INSTANCES),
+        return new ComputeEngine(Integer.parseInt(TestDataReader.getTestData(TESTDATA_ENGINE_INSTANCES)),
                 TestDataReader.getTestData(TESTDATA_ENGINE_INSTANCES_FOR),
                 TestDataReader.getTestData(TESTDATA_ENGINE_OPERATING_SYSTEM),
                 TestDataReader.getTestData(TESTDATA_ENGINE_VM_CLASS),
                 TestDataReader.getTestData(TESTDATA_ENGINE_INSTANCE_TYPE),
-                TestDataReader.getTestData(TESTDATA_ENGINE_ADD_GPUS),
-                TestDataReader.getTestData(TESTDATA_ENGINE_NUMBER_OF_GPUS),
+                Boolean.parseBoolean(TestDataReader.getTestData(TESTDATA_ENGINE_ADD_GPUS)),
+                Integer.parseInt(TestDataReader.getTestData(TESTDATA_ENGINE_NUMBER_OF_GPUS)),
                 TestDataReader.getTestData(TESTDATA_ENGINE_GPU_TYPE),
                 TestDataReader.getTestData(TESTDATA_ENGINE_LOCAL_SSD),
                 TestDataReader.getTestData(TESTDATA_ENGINE_DATACENTER_LOCATION),

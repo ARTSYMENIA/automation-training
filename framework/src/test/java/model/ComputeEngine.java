@@ -3,20 +3,20 @@ package model;
 import java.util.Objects;
 
 public class ComputeEngine {
-    private String numberOfInstances;
+    private Integer numberOfInstances;
     private String instancesFor;
     private String operatingSystem;
     private String vmClass;
     private String instanceType;
-    private String addGPUs;
-    private String numberOfGPUs;
+    private boolean addGPUs;
+    private Integer numberOfGPUs;
     private String gpuType;
     private String localSSD;
     private String datacenterLocation;
     private String committedUsage;
 
-    public ComputeEngine(String numberOfInstances, String instancesFor, String operatingSystem, String vmClass,
-                         String instanceType, String addGPUs, String numberOfGPUs, String gpuType, String localSSD,
+    public ComputeEngine(int numberOfInstances, String instancesFor, String operatingSystem, String vmClass,
+                         String instanceType, boolean addGPUs, int numberOfGPUs, String gpuType, String localSSD,
                          String datacenterLocation, String committedUsage) {
         this.numberOfInstances = numberOfInstances;
         this.instancesFor = instancesFor;
@@ -32,10 +32,10 @@ public class ComputeEngine {
     }
 
     public String getNumberOfInstances() {
-        return numberOfInstances;
+        return numberOfInstances.toString();
     }
 
-    public void setNumberOfInstances(String numberOfInstances) {
+    public void setNumberOfInstances(int numberOfInstances) {
         this.numberOfInstances = numberOfInstances;
     }
 
@@ -71,19 +71,19 @@ public class ComputeEngine {
         this.instanceType = instanceType;
     }
 
-    public String getAddGPUs() {
+    public boolean addGPUs() {
         return addGPUs;
     }
 
-    public void setAddGPUs(String addGPUs) {
+    public void setAddGPUs(boolean addGPUs) {
         this.addGPUs = addGPUs;
     }
 
     public String getNumberOfGPUs() {
-        return numberOfGPUs;
+        return numberOfGPUs.toString();
     }
 
-    public void setNumberOfGPUs(String numberOfGPUs) {
+    public void setNumberOfGPUs(int numberOfGPUs) {
         this.numberOfGPUs = numberOfGPUs;
     }
 
@@ -124,13 +124,13 @@ public class ComputeEngine {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ComputeEngine that = (ComputeEngine) o;
-        return numberOfInstances.equals(that.numberOfInstances) &&
+        return numberOfInstances == that.numberOfInstances &&
+                addGPUs == that.addGPUs &&
+                numberOfGPUs == that.numberOfGPUs &&
                 Objects.equals(instancesFor, that.instancesFor) &&
                 operatingSystem.equals(that.operatingSystem) &&
                 vmClass.equals(that.vmClass) &&
                 instanceType.equals(that.instanceType) &&
-                Objects.equals(addGPUs, that.addGPUs) &&
-                numberOfGPUs.equals(that.numberOfGPUs) &&
                 gpuType.equals(that.gpuType) &&
                 localSSD.equals(that.localSSD) &&
                 datacenterLocation.equals(that.datacenterLocation) &&

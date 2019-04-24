@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class EmailYourEstimateForm extends AbstractPage {
-    private final String BASE_URL = "https://lroid.com/ru/";
+    private final String PAGE_URL = "https://cloud.google.com/products/calculator/";
     private final Logger logger = LogManager.getRootLogger();
 
     @FindBy(xpath = "//form[@name='emailForm']//button[2]")
@@ -39,7 +39,7 @@ public class EmailYourEstimateForm extends AbstractPage {
 
     @Override
     public AbstractPage openPage() {
-        driver.navigate().to(BASE_URL);
+        driver.navigate().to(PAGE_URL);
         return this;
     }
 }
