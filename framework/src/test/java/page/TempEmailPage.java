@@ -18,12 +18,12 @@ public class TempEmailPage extends AbstractPage{
     @FindBy(id = "eposta_adres")
     private WebElement mailAddress;
 
-    @FindBy(xpath = "//*[@id='mobilepadding']/descendant::*[contains(text(),'USD')][3]")
+    @FindBy(xpath = "//*[@id='mobilepadding']/descendant::*[contains(text(),'Estimated Monthly Cost:')]")
     private WebElement totalPrice;
 
     private final By newMessageGot = By.xpath("//*[contains(@id,'mail')]/a");
 
-    public String getPAGE_URL() {
+    public String getPageURL() {
         return PAGE_URL;
     }
 
