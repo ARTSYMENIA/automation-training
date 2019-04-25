@@ -10,7 +10,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import service.ComputeEngineCreator;
 
 public class CalculatorPage extends AbstractPage {
     private final String PAGE_URL = "https://cloud.google.com/products/calculator/";
@@ -101,7 +100,9 @@ public class CalculatorPage extends AbstractPage {
 
     public EmailYourEstimateForm invokeEmailForm() {
         buttonAddToEstimate.click();
-        buttonEmailEstimate.click();
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions.visibilityOf(buttonEmailEstimate))
+                .click();
         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.presenceOfElementLocated(By.name("emailForm")));
         return new EmailYourEstimateForm(driver);

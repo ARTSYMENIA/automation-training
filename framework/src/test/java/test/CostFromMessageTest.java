@@ -9,7 +9,6 @@ import service.ComputeEngineCreator;
 import service.TestDataReader;
 import util.StringUtils;
 import util.Tabs;
-import java.util.ArrayList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
@@ -19,8 +18,8 @@ public class CostFromMessageTest extends CommonConditions {
     @Test
     public void testIfTotalPriceFromEmailEqualsToCalculated() {
         double expectedPrice = Double.parseDouble(TestDataReader.getTestData("testdata.engine.expected.price"));
-//        double expectedPrice = 1187.77;
         ComputeEngine testComputeEngine = ComputeEngineCreator.computeEngineForEstimating();
+
         EmailYourEstimateForm formToSend = new GoogleCloudMainPage(driver)
                 .openPage()
                 .goToProductsPage()
@@ -29,18 +28,20 @@ public class CostFromMessageTest extends CommonConditions {
                 .fillPricingCalculatorForm(testComputeEngine)
                 .invokeEmailForm();
 
-        ArrayList<String> tabs = new Tabs(driver)
-                .openNewTab(new TempEmailPage(driver).getPageURL());       //open https://lroid.com/ru/ in a new tab
+        TempEmailPage tempEmailPage = new TempEmailPage(driver);
+        Tabs tabs = new Tabs(driver);
 
-        String emailAddress = new TempEmailPage(driver).getEmailAddress();
+        tabs.openNewTab(tempEmailPage.getPageURL());       //open https://lroid.com/ru/ in a new tab
 
-        new Tabs(driver).switchTab(tabs,0);     //switch to the tab with Email form
+        String emailAddress = tempEmailPage.getEmailAddress();
+
+        tabs.switchToTheFirstTab();     //switch to the tab with Email form
 
         formToSend.fillAndSendEmailFrom(emailAddress);
 
-        new Tabs(driver).switchTab(tabs,1);     //switch to the tab with temp mail
+        tabs.switchToTheSecondTab();     //switch to the tab with temp mail
 
-        String totalPriceFromEmail = new TempEmailPage(driver)
+        String totalPriceFromEmail = tempEmailPage
                 .openNewMessage()
                 .getTotalPriceFromEmail();
         double actualTotalPrice = StringUtils.extractPriceFromString(totalPriceFromEmail);
