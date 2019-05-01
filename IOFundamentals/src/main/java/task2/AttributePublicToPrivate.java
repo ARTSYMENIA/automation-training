@@ -27,8 +27,7 @@ public class AttributePublicToPrivate {
         io.writeJavaProgram(javaProgram, file);
         List<String> list = io.readByLines(file);
         List<String> listWithReplacedWords = new ArrayList<>(replaceAttribute(list, "public", "private"));
-        File fileWithReplacedAttribute = io.createNewFile("java", "task2WithReplacedAttributes");
-        io.outputList(listWithReplacedWords, fileWithReplacedAttribute);
+        io.outputList(listWithReplacedWords, file);
     }
 
     private static List<String> replaceAttribute(List<String> list, String attributeToReplace, String attributeToInsert) {
