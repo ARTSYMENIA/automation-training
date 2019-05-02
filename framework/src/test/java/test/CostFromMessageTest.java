@@ -30,15 +30,10 @@ public class CostFromMessageTest extends CommonConditions {
 
         TempEmailPage tempEmailPage = new TempEmailPage(driver);
         Tabs tabs = new Tabs(driver);
-
         tabs.openNewTab(tempEmailPage.getPageURL());       //open https://lroid.com/ru/ in a new tab
-
         String emailAddress = tempEmailPage.getEmailAddress();
-
         tabs.switchToTheFirstTab();     //switch to the tab with Email form
-
         formToSend.fillAndSendEmailFrom(emailAddress);
-
         tabs.switchToTheSecondTab();     //switch to the tab with temp mail
 
         String totalPriceFromEmail = tempEmailPage
